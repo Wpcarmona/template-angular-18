@@ -1,0 +1,43 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+.header{
+    background-color: rosybrown;
+}
+
+.content {
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh; 
+}
+
+.main-container {
+    display: flex; 
+    flex: 1; 
+}
+
+.sidebar {
+    max-width: 200px; 
+    width: 100%; 
+    flex-shrink: 0; 
+    background-color: #f1f1f1; 
+}
+
+@media (max-width: 425px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+main {
+    flex-grow: 1; 
+    overflow-y: auto; 
+}
+
+.footer {
+    height: 50px; 
+    background-color: rgb(196, 196, 250); 
+    text-align: center;
+}
